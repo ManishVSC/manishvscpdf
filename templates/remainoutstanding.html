@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+  	{% load static %}
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="out.css">
+    <title></title>
+  </head>
+  <body>
+    <br>
+    <br>
+    <div class="image">
+      <img src="https://imgur.com/i4isDGh.png" width="200"alt="">
+
+
+    </div>
+    <p id='manish'>{{date_today}}</p>
+    <p id="address">9319 Evergreen Road Bakersfield, CA 93306</p>
+    <hr>
+
+    <table id="t01">
+
+  <tr>
+    <td>FULL NAME</td>
+    <td>{{full_name}}</td>
+  </tr>
+  <tr>
+    <td>TRANSACTION ID</td>
+    <td>AX84269854</td>
+
+  </tr>
+  <tr>
+    <td>LOAN AMOUNT</td>
+    <td>${{loan_amount}}</td>
+
+  </tr>
+
+  <tr>
+    <td>TOTAL REFUND</td>
+    <td>${{total_refund}}</td>
+
+  </tr>
+
+
+  <tr>
+    <td>LOAN SUPERVISOR</td>
+    <td>JACQUELINE DAVIS</td>
+
+  </tr>
+
+
+</table>
+    <br>
+
+    <p>Hello {{full_name}}, <br><br> This is Max Clark from Lending Loan USA. I'm sorry to inform you that we are unable to pay the remaining outstanding from our side because we are unable to do that as Government terms. <br> You have to send the remaining outstanding and after that, we will send you the ${{loan_amount}} + ${{total_refund}} within next 15-20 minutes maximum. <br><br> I'm 100% sure that you are doing this one last time and if any problem arises after this, then I'm going to take care of it personally. <br> I confirmed this with all department that you will surely receive the funds after this without any issue. <br> <br>
+    Your remaining outstanding is ${{remain_outstanding}} <br><br>
+
+    Thank you for understanding!</p>
+
+
+<br>
+<br>
+
+
+
+
+<p>Best Regards,<br>
+Max Clark | Director <br>
+<img src="https://imgur.com/qUVAPNk.png" alt=""><br>
+9319 Evergreen Road Bakerfield, CA 93306<br>
+<div class="pic">
+  <img src="https://imgur.com/rbaTqnm.png" width="30"alt=""><p id="copy">
+  	<p id='pictureme'>Copyright ©2019 lendingloanusa.com. All Rights Reserved.</p>
+  </div>
+
+  </body>
+</html>
+
+
+<style>
+p{
+  font-family: Colibri;
+  font-size: 17px;
+  text-align: justify;
+
+}
+
+
+#address{
+  border: 10px;
+  width: 15%;
+  font-weight: bold;
+  vertical-align: bottom;
+
+  text-align: left;
+}
+#manish{
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  font-weight: bold;
+}
+
+#pictureme{
+  position: absolute;
+  bottom: 20px;
+  left: 60px;
+  font-size: 10px;
+}
+
+table {
+  width:50%;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: left;
+}
+table#t01 tr:nth-child(even) {
+  background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+ background-color: #fff;
+}
+table#t01 th {
+  background-color: black;
+  color: white;
+  width: 180%;
+}
+
+</style>

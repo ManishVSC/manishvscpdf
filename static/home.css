@@ -1,0 +1,19 @@
+#moneygram_heading1{
+  margin:20px 0px 5px 20px;display:inline;float:left
+
+}
+
+#moneygram_heading2{
+  margin:20px 0px 5px 20px;display:inline;float:right
+}
+img{
+  margin:90px 1px 2px -285px;
+}
+#westernhome{
+  position: absolute;
+  top: 85px;
+  left: 255px;
+  right: 2px;
+  bottom: 5px;
+  font-size: 5px;
+}

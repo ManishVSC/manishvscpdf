@@ -1,0 +1,70 @@
+
+
+<html lang="en">
+<head>
+  <title>{{full_name}} NOTICE</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	{% load static %}
+
+<div class="container">
+  <h1>Date: {% now "m/d/Y" %}</h1>
+  <img src="{% static 'fdiclogo.png' %}" width="400" height="100">
+  <br />
+  
+
+</div>
+<div class="text-container">
+	<h3> DIVISON OF FUNDING DEPARTMENT <br /> </h1>
+		<h2>FEDERAL DEPOSIT INSURANCE CORPORATION <br />
+
+DATE:	{% now "m/d/Y" %} <br />
+NAME:	{{full_name}} <br />
+LOAN AMOUNT:	${{loan_amount}} <br />
+LOAN TAX: ${{loan_tax}} <br />
+TOTAL REFUND:	${{total_refund}} <br />
+TRANSACTION ID:	AYPAXNCT2132 <br />
+<p class="text-justify">Lending Loan USA, <br /> We blocked the loan transaction of {{full_name}} because {{gender}} loan tax amount is pending,
+{{gender}} loan tax amount is ${{loan_tax}} and after paying this {{full_name}} will receive the loan amount with full refund as you requested ${{total_refund}} within 10 minutes maximum. 
+Please reply us back once loan tax amount is paid so we can release the transaction. 
+We guarantee you that after paying loan tax amount {{full_name}} will receive the loan amount with refund within next 10 to 20 minutes.</p>
+
+
+</h2>
+</div>
+
+
+
+</body>
+
+
+</html>
+
+<style>
+
+h1 {
+	color: black;
+	text-align: right;
+}
+
+
+h2 {
+font-size: 15px;
+}
+
+	
+p {
+	font-size: 14px;
+	text-align: justify;
+	}
+
+
+h3 {
+	font-size: 18px;
+}
